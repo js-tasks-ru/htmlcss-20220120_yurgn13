@@ -1,63 +1,38 @@
-.main {
-    display: flex;
-    flex-flow: row wrap;
-    width: 640px;
-    height: 140px;
-  }
-  .main__button {
-    display: inline-block;
-    margin: 10px;
-  }
-  .button__button {
+  .button {
     width: 189px;
     height: 48px;
     border-radius: 8px;
+    box-sizing: border-box;
     color: var(--white);
     border: none;
     padding: 15px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
-      border 200ms ease-in-out;
-  }
-  .button__button--primary {
-    background: var(--primary);
-  }
-  .button__button--primary:hover {
-    background: #2342c0;
+    border 200ms ease-in-out;
     cursor: pointer;
   }
-  .button__button--primary:disabled {
+  .button--primary {
     background: var(--primary);
-  
-    cursor: not-allowed;
-    opacity: 0.5;
   }
-  .button__button--secondary {
+  .button--primary:hover {
+    background: var(--primary-hover);
+    }
+  .button--secondary {
     background: var(--secondary);
   }
-  .button__button--secondary:hover {
-    background: #5028c6;
-    cursor: pointer;
+  .button--secondary:hover {
+    background: var(--secondary-hover);
   }
-  .button__button--secondary:disabled {
-    background: var(--secondary);
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  .button__button--alternate {
+    .button--alternate {
     color: var(--grey-4);
     background: var(--white);
     border: 1px solid var(--grey-3);
-    box-sizing: border-box;
+    
   }
-  .button__button--alternate:hover {
-    color: var(--grey-4);
-    border: 1px solid var(--black);
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-  .button__button--alternate:disabled {
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
+  .button--alternate:hover {
+    border-color: var(--black);
+    }
+  .button:disabled {
     cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
   }
