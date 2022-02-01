@@ -1,8 +1,7 @@
 .skeleton {
     max-width: 579px;
-    height: 192px;
-    background: #ffffff;
-    border: 1px solid #acb5bd;
+    background: var(--white);
+    border: 1px solid var(--grey3);
     box-sizing: border-box;
     border-radius: 8px;
     padding: 24px;
@@ -18,7 +17,7 @@
   .skeleton__photo {
     width: 64px;
     height: 64px;
-    background: #dde2e5;
+    background: var(--grey2);
     border-radius: 50%;
     
   }
@@ -48,11 +47,11 @@
     );
   }
   .skeleton__line--short {
-    max-width: 172px;
+    max-width: 40%;
   }
   .skeleton__line--medium {
-    max-width: 257px;
+    max-width: 60%;
   }
   .skeleton__line--long {
-    max-width: 515px;
+    max-width: 90%;
   }
