@@ -1,3 +1,4 @@
+@import 'normalize.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -28,9 +29,13 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-.main {
-
+html, body {
+    height: 100%;
 }
-.page {
-
+.main{
+    min-height: 400px;
+    background: var(--grey-1);
+    border: 1px solid var(--grey-2);
+    border-right: 0px;
+    border-left: 0px;
 }
