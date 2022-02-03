@@ -1,5 +1,5 @@
 :root {
-    --histogram-width: 654px;
+    --histogram-width: 354px;
 }
 .histogram{
 width: var(--histogram-width);
