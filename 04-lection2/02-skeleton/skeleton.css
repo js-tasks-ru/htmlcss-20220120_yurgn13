@@ -1,7 +1,7 @@
 .skeleton {
     max-width: 579px;
     background: var(--white);
-    border: 1px solid var(--grey3);
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
     padding: 24px;
@@ -17,7 +17,7 @@
   .skeleton__photo {
     width: 64px;
     height: 64px;
-    background: var(--grey2);
+    background: var(--grey-2);
     border-radius: 50%;
     
   }
