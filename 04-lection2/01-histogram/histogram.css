@@ -1,20 +1,17 @@
-:root {
-    --histogram-width: 354px;
-}
 .histogram{
-width: var(--histogram-width);
+max-width: 354px;
 background: var(--white);
 border: 1px solid var(--grey-3);
 box-sizing: border-box;
-border-radius: calc(var(--histogram-width)/45);
+border-radius: 8px;
 font-family: Inter;
 font-style: normal;
 font-weight: normal;
 color: var(--black);
-font-size: calc(var(--histogram-width)/22);
+font-size: 16px;
+padding: 16px 24px 16px 24px;
 }
 .histogram__header{
-    margin: 5% 7% 0% 7%;
     display: flex;
     justify-content: space-between;
 }
@@ -25,18 +22,15 @@ opacity: 0.8;
 color: var(--blue);
 }
 .histogram__counter{
-font-size: calc(var(--histogram-width)/18);
-margin: 2% 7% 0% 7%;
+font-size: 20px;
 }
 .histogram__main{
-    margin: 0% 7% 5% 7%;
-    height:calc(var(--histogram-width)/3.54) ;
+    height:100px ;
     display: flex;
-    gap: calc(var(--histogram-width)/354);
-    justify-content: space-around;
+    gap: 1px;
     align-items: flex-end;
 }
 .histogram__column{
     background: var(--primary);
-    width: calc(var(--histogram-width)/40) ;
+    width: 9px ;
 }
