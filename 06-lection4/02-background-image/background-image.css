@@ -1,0 +1,8 @@
+.body{
+    background-image: url(./public/forest_400.jpg);
+    background-size: cover;
+    @media screen (min-width: 400px) and (max-width:768px)
+    {
+        background-image: url(./public/forest_768.jpg);   
+    }
+}
