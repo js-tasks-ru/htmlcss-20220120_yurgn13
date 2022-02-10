@@ -27,3 +27,11 @@
 .accordion__title::-webkit-details-marker {
     display: none;
 }
+.accordion__arrow{
+    position: absolute;
+    right: 0px;
+    color:var(--grey-4);
+    width: 26px;
+    height: 26px;
+}
+.accordion__item[open] .accordion__arrow{transform: rotate(180deg);}
