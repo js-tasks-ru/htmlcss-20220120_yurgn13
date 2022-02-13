@@ -1,0 +1,84 @@
+.input{
+    display: inline-block;
+    position: relative;
+    }
+.input__title{
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--grey-3);
+margin-bottom: 5px;
+}
+    .input__design{
+    display: flex;
+    gap: 12px;
+    width: 350px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 24px;
+    }
+    .input__input{
+    width: 100%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color:var(--grey-4);
+    border: 0;
+    }
+    .input__input::placeholder{
+        color: var(--grey-2);
+    }
+    .input__input:focus{
+    outline: 0;
+    }
+   
+    .input__control{
+    width: 24px;
+    height: 24px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .input__icon{
+        position: absolute;
+        width: 24px;
+        height: 24px;  
+    }
+    .input__icon--success{
+        visibility: hidden;
+        color: var(--blue2);
+    }
+    .input__icon--error{
+        visibility: hidden;
+        color: var(--red);
+    }
+    
+    .input__design:focus-within{
+        border-color: var(--blue);
+    }
+    .input__design--error:focus-within{
+        border-color:  var(--red);
+    }
+    .input__input--error ~ .input__control .input__icon--error{
+        visibility: visible;
+    }
+    .input__input--error::placeholder{
+        color: var(--grey-4);
+    }
+    .input__input--success ~ .input__control .input__icon--success{
+        visibility: visible;
+    }
+    .input__input--success::placeholder{
+        color: var(--grey-4);
