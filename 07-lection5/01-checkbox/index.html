@@ -5,7 +5,35 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
-    <body>
+    <body style="margin-left: 20px; display: inline-flex; flex-direction: column; gap: 10px;">
+        <h3 style="font-family: Inter;font-style: normal;font-weight: 500;font-size: 12px;line-height: 18px;letter-spacing: 0.04em;text-transform: uppercase;color: #ACB5BD;">CHECKBOX TYPE</h3>
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="name">
+            <div class="checkbox__design">
+                <div class="checkbox__control">
+                    <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="../../assets/icon/sprite.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">
+                    CHECKBOX 
+                </div>
+            </div>
 
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="name" disabled>
+            <div class="checkbox__design">
+                <div class="checkbox__control checkbox__control--disabled">
+                    <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="../../assets/icon/sprite.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label checkbox__label--disabled">
+                    CHECKBOX 
+                </div>
+            </div>
+
+        </label>
     </body>
 </html>
