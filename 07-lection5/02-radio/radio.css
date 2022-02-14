@@ -1,8 +1,6 @@
 .radio{
     display: inline-block;
-    position: relative;
-    padding: 2px;
-    
+    position: relative;    
     }
     .radio__input{
     opacity: 0;
@@ -28,7 +26,7 @@
     justify-content: center;
     }
     .radio__label{
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid transparent;
     display: inline-block;
     font-family: Inter;
     font-style: normal;
@@ -43,7 +41,7 @@
         border:2px solid var(--white);
     }
     .radio__input:focus ~ .radio__design .radio__label{
-        border-bottom: 2px solid var(--grey-2);
+        border-bottom-color:var(--grey-2);
         
     }
     .radio__control--disabled{
