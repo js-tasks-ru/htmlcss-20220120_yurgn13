@@ -1,8 +1,6 @@
 .toggler{
     display: inline-block;
     position: relative;
-    padding: 2px;
-    
     }
     .toggler__input{
     opacity: 0;
@@ -36,7 +34,7 @@
     border-radius:50%;
     }
     .toggler__label{
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid transparent;
     display: inline-block;
     font-family: Inter;
     font-style: normal;
@@ -54,7 +52,7 @@
         background: var(--white);
     }
     .toggler__input:focus ~ .toggler__design .toggler__label{
-        border-bottom: 2px solid var(--grey-2);
+        border-bottom-color:var(--grey-2);
         
     }
     .toggler__control--disabled{
