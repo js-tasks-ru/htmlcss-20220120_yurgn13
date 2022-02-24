@@ -1,4 +1,4 @@
-.burger-menu-open{
+.button-menubrg{
     display: inline-flex;
     width: 32px;
     height: 32px;
@@ -61,7 +61,7 @@
     line-height: 24px;
     color: var(--grey-4);    
 }
-.burger-menu__toggletheme{
+.burger-menu__toggler-container{
     display: flex;
     align-items: center;
     border-top: 1px solid var(--grey-3);
@@ -80,7 +80,7 @@ line-height: 26px;
 color: var(--grey-3);
 margin: 24px 0 0 0;
 }
-.burger-menu__nav a{
+.burger-menu__nav-item{
     margin-top: 16px;
     display: inline-flex;
     color: var(--black);
